@@ -1,5 +1,5 @@
 class pertama{
  public static void main(String[] args){
-  System.out.println("Hello Worldagi");
+  System.out.println("Hello World lagi");
  }   
 } 
