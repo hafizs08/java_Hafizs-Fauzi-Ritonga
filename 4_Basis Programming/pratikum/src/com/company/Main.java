@@ -31,13 +31,11 @@ public class Main {
     }
 
     private static boolean checkVC(char text) {
-
         if ((text>=65 && text<=90) || (text>=97 && text<=122))
             return true;
         else
             return false;
     }
-
     private static int getVC(char text) {
         int vc;
         if (text=='A' || text=='E' || text=='I' || text=='O' || text=='U'

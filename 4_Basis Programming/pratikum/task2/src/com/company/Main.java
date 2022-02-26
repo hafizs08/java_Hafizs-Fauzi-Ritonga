@@ -4,20 +4,26 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
-        String userName;
+        int o= 0, x=0;
 
-        // Enter username and press Enter
         System.out.println("Enter username");
-        userName = myObj.nextLine();
+        String str = input.nextLine();
 
-        int o = 0;
-        int x = 0;
+        str = str.toLowerCase();
 
+        for(int i=0; i<str.length();i++){
+            char c str.CharAt(i);
+            if(c=='x'){
+                x++
+            }
+            else if (c=='o'){
+                o++;
+            }
+        }
         if (x == o) {
             System.out.println("True");
         } else {
             System.out.println("False");
         }
-        System.out.println("Username is: " + userName);
     }
 }
