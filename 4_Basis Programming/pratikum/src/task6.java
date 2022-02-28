@@ -9,7 +9,7 @@ public class task6 {
         two=input.nextInt();
 
         int answer = Pow(one, two);// Pow untuk menghitung dipangkatkan
-        System.out.println(answer);
+        System.out.println(Pow(one, two));
 
     }
 
