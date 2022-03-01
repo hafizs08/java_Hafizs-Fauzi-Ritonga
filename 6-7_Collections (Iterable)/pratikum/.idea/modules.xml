@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Pratikum.iml" filepath="$PROJECT_DIR$/Pratikum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pratikum.iml" filepath="$PROJECT_DIR$/pratikum.iml" />
     </modules>
   </component>
 </project>
