@@ -6,10 +6,10 @@ public class problem1 {
                 isi++;
             }
         }
-        if (isi == 1) {
-            System.out.println(true);
-        } else {
+        if (isi != 1) {
             System.out.println(false);
+        } else {
+            System.out.println(true);
         }
         return angka;
     }

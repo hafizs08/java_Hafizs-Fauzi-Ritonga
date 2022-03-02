@@ -12,7 +12,7 @@ public class problem2 {
 
     public static int Pow(Integer one, Integer two){
         int result =1;
-        for (int i = 0; i < two; i++) {
+        for (int i = 0; i < two; i++) {//
             result *= one;
         }
         return result;
