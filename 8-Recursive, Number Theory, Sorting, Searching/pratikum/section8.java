@@ -12,7 +12,7 @@ public class section8 {
         for (; hitung < prima.length; angka +=2){
             long limit = (long)Math.ceil(Math.sqrt((double) angka));
             for (int i = 1; i < hitung && prima[i] <=limit; i++)
-                if (angka%prima[i] == 0)
+               if (angka%prima[i] == 0)
                     continue luar;        
                prima[hitung++] = angka;
            
