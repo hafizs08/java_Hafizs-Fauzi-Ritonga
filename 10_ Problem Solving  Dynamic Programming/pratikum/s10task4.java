@@ -1,4 +1,4 @@
-public interface s10 {
+public interface s10task4 {
     public static void main(String[] args) {
         taskRoma(9);
         taskRoma(23);
@@ -11,7 +11,7 @@ public interface s10 {
         int[] value = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
 
         StringBuilder roma = new StringBuilder();
-
+        
         for (int i = 0; i < value.length; i++) {
             while (angka >= value[i]) {
                 angka -= value[i];
