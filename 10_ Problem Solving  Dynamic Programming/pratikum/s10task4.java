@@ -15,6 +15,7 @@ public interface s10task4 {
         for (int i = 0; i < value.length; i++) {
             while (angka >= value[i]) {
                 angka -= value[i];
+                System.out.println(angka + "angka");
                 roma.append(arrRoma[i]);
             }
         }
