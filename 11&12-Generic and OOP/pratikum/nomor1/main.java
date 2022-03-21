@@ -5,7 +5,7 @@ public class main {
     cats.setAge(4);
     cats.displayCat();
     //System.out.println(cats.getName() + " " + cats.getColor() + " " +
-    cats.getAge());
+    cats.getAge();
 
     cat cats1 = new cat();
     cats1.setColor("Putih");
