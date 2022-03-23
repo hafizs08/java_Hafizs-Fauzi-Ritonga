@@ -14,11 +14,13 @@ public class kandang {
         if (pil == 1) {
             System.out.println("masukan jumlah kandang : ");
             int kandang = input.nextInt();
-            for( int i= 0; i<=kandang;  i++){
+            for( int i= 1; i<=kandang;  i++){
                 System.out.println("|||");
                 System.out.println("|"+i+"|");
                 System.out.println("|||");
             }
+            System.out.println("Pilihan kandang yang anda ingin buka :");
+            int tebak = input.nextInt();
         }
 
         // class calculator extends data {
