@@ -1,0 +1,177 @@
+mongo.txt
+db.products.insertMany([
+    {
+        name: "meja",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        name: "lampu",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    }
+]);
+
+db.products.insertMany([
+    {
+        name: "gelas",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        name: "mouse",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        name: "PC",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    }
+]);
+
+db.operatos.insertMany([
+    {
+        name: "berat",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        name: "sedang",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        name: "ringan",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    }
+]);
+
+db.products.insertMany([
+    {
+        products_type_id: 1,
+        operator_id : 2,
+        code: "ysaeq",
+        name: "hafizs",
+        status :"baik",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        products_type_id: 2,
+        operator_id : 3,
+        code: "sadk",
+        name: "fauzi",
+        status :"baik",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        products_type_id: 1,
+        operator_id : 3,
+        code: "ndaoas",
+        name: "ritonga",
+        status :"baik",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        products_type_id: 3,
+        operator_id : 2,
+        code: "nsafwe",
+        name: "azira",
+        status :"baik",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    }
+]);
+
+db.products_descriptions.insertMany([
+    {
+        description: "aman",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        description: "OKE",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        description: "mantap",
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    }
+]);
+
+db.users.insertMany([
+    {
+        nama: "sofia",
+        status: 45,
+        dob: Date ("2022-11-22"),
+        gender : 'F',
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        nama: "akbar",
+        status: 95,
+        dob: Date ("2022-11-22"),
+        gender : 'M',
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        nama: "ilham",
+        status: 12,
+        dob: Date ("2022-11-22"),
+        gender : 'M',
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        nama: "dea",
+        status: 76,
+        dob: Date ("2022-11-22"),
+        gender : 'F',
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    },
+    {
+        nama: "raka",
+        status: 26,
+        dob: Date ("2022-11-22"),
+        gender : 'M',
+        created_at : new Date ("2020-08-24"),
+        update_at : new Date ("2022-08-24")
+    }
+]);
+
+db.users.find( { gender: "M" } )
+db.products.find({id:3})
+db.users.find( { gender: "F" } ).count()
+db.users.find({},{nama:1,_id:0}).sort({"nama":1})
+db.products.find().limit(5)
+
+db.products.updateOne(
+   { id: 1 },
+   {
+     $set: {  nama: "product dummy" },
+     $currentDate: { lastModified: true }
+   }
+   db.transaction.updateOne(
+   { id: 1 },
+   {
+     $set: {  qty: 3 },
+     $currentDate: { lastModified: true }
+   }
+)
+
+db.products.deleteOne({
+    id:1
+});
+
+db.products_type.deleteOne({
+    id:1
+});
