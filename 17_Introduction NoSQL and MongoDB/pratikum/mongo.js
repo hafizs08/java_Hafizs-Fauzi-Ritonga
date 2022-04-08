@@ -46,3 +46,27 @@ db.books.aggregate( [
         }
     }
  ] )
+ db.books.aggregate(
+    [
+       {
+          $project:
+            {
+              title: 1,
+              discount:
+                {
+                  $cond: {  if: { $gte: [ "$price", 60000 ] }, then: 1,
+                            if: { $gte: [ "$price", 90000 ] }, then: 2, else: 3 }
+                }
+            }
+       }
+    ]
+ )
+ db.books.find().sort( { price: 1 } )
+ db.books.find({_id:3},{_id:4},{_id:1,title:1,price:1,_id:0})
+ db.books.find({_id:3,_id:4})
+
+ db.books.find({
+    $or: [
+      {_id:3},{_id:4}
+    ]
+  },{_id:1,title:1,price:1,_id:0})
