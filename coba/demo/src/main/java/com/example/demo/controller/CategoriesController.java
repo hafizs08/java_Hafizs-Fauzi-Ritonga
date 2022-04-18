@@ -46,8 +46,6 @@ public class CategoriesController {
         categoryById.ifPresent(res -> {
             res.setName(category.getName());
             res.setDescription(category.getDescription());
-            res.setPrice(category.getPrice());
-            res.setStock(category.getPrice());
             categoryRepository.save(res);
         });
         return categoryById;

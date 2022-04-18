@@ -17,32 +17,8 @@ public class Category {
     @Column(name = "name")
     private String name;
 
-
-
     @Column(name = "description")
     private String description;
-
-    @Column(name = "price")
-    private int price;
-
-    @Column(name = "stock")
-    private int stock;
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
 
     public Long getId() {
         return id;
