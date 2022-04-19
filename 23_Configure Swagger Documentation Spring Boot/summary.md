@@ -1,2 +1,1 @@
- belum siap
- 
+Swagger adalah Bahasa Deskripsi Antarmuka untuk mendeskripsikan RESTful API yang diekspresikan menggunakan JSON. Swagger digunakan bersama dengan seperangkat alat perangkat lunak sumber terbuka untuk merancang, membangun, mendokumentasikan, dan menggunakan layanan web RESTful.
