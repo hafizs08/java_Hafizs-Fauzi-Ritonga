@@ -1,9 +1,9 @@
 package com.example.demo.entity;
 
+import javax.annotation.Generated;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,20 +11,18 @@ import javax.persistence.Table;
 @Table(name = "category")
 public class Category {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
+    @Column(length = 11, nullable = false)
+    private Integer id;
 
-    @Column(name = "name")
+    @Column(length = 50, nullable = false)
     private String name;
 
-    @Column(name = "description")
-    private String description;
-
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -36,13 +34,5 @@ public class Category {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-    
     
 }

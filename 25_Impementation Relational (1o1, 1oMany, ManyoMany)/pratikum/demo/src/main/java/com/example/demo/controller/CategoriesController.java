@@ -12,7 +12,6 @@ import com.example.demo.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,21 +36,21 @@ public class CategoriesController {
     public Category createNewCategory(@RequestBody Category payload) {
         return categoryRepository.save(payload);
     }
-    @PutMapping("/categories/{id}") 
-    public Optional<Category> updateCategory(
-        @PathVariable Long id, 
-        @RequestBody Category category) {
-            Optional<Category> categoryById = categoryRepository.findById(id);
+    // @PutMapping("/categories/{id}") 
+    // public Optional<Category> updateCategory(
+    //     @PathVariable Long id, 
+    //     @RequestBody Category category) {
+    //         Optional<Category> categoryById = categoryRepository.findById(id);
         
-        categoryById.ifPresent(res -> {
-            res.setName(category.getName());
-            res.setDescription(category.getDescription());
-            res.setPrice(category.getPrice());
-            res.setStock(category.getPrice());
-            categoryRepository.save(res);
-        });
-        return categoryById;
-    }
+    //     categoryById.ifPresent(res -> {
+    //         res.setName(category.getName());
+    //         res.setDescription(category.getDescription());
+    //         res.setPrice(category.getPrice());
+    //         res.setStock(category.getPrice());
+    //         categoryRepository.save(res);
+    //     });
+    //     return categoryById;
+    // }
     @DeleteMapping("/categories/{id}")
     public void deleteCategory(@PathVariable Long id) {
         Optional<Category> categoryById = categoryRepository.findById(id);
