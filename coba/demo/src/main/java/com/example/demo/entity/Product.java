@@ -4,6 +4,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -16,6 +18,15 @@ public class Product {
     private String productName;
     private Long brandId;
     private Long categoryid;
+
+    @ManyToOne
+    private Category category;
+
+    @ManyToOne
+    private Brand brand;
+
+
+
     public Long getProductId() {
         return productId;
     }
