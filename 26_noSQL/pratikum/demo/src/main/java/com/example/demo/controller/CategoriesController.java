@@ -7,9 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.example.demo.entity.Category;
-import com.example.demo.entity.Product;
 import com.example.demo.repository.CategoryRepository;
-import com.example.demo.repository.productsRepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,12 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class CategoriesController {
-    
     @Autowired
     private CategoryRepository categoryRepository;
-
-    @Autowired
-    private productsRepo productRepository;
 
     @GetMapping("/categories")
     public List<Category> getCategories() {
@@ -43,7 +37,6 @@ public class CategoriesController {
     public Category createNewCategory(@RequestBody Category payload) {
         return categoryRepository.save(payload);
     }
-    
     // @PutMapping("/categories/{id}") 
     // public Optional<Category> updateCategory(
     //     @PathVariable Long id, 
@@ -66,9 +59,4 @@ public class CategoriesController {
             categoryRepository.delete(res);
         });
     }
-    
-    // @GetMapping("/categories/{name}")
-    // public List<Product> getCategoryByName(@PathVariable String name) {
-    //     return productRepository.findByCategory_CategoryNameIsContaining(name);
-    // }
 }

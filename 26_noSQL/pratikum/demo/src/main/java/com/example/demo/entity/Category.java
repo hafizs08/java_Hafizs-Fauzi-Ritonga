@@ -11,11 +11,11 @@ import javax.persistence.Table;
 @Table(name = "category")
 public class Category {
     @Id
-    @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
-    @Column(name="id", length = 11, nullable = false)
+ 
+
     private Integer id;
 
-    @Column(length = 50, nullable = false)
+  
     private String name;
 
     public Integer getId() {

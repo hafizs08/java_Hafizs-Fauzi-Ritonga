@@ -14,42 +14,52 @@ public class Product {
     @Id
     @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
     private Long productId;
-    @Column(length = 100, nullable = false, unique = true)
-    private String productName;
-    private Long brandId;
-    private Long categoryid;
 
-    @ManyToOne
+
+    @Column(name="product_name", length = 100, nullable = false, unique = true)
+    private String productName;
+
+    @ManyToOne  
+    @JoinColumn(name = "id")
     private Category category;
 
     @ManyToOne
+    // @JoinColumn(name = "brand_id")
     private Brand brand;
-
-
 
     public Long getProductId() {
         return productId;
     }
+
     public void setProductId(Long productId) {
         this.productId = productId;
     }
+
     public String getProductName() {
         return productName;
     }
+
     public void setProductName(String productName) {
         this.productName = productName;
     }
-    public Long getBrandId() {
-        return brandId;
+
+    public Category getCategory() {
+        return category;
     }
-    public void setBrandId(Long brandId) {
-        this.brandId = brandId;
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
-    public Long getCategoryid() {
-        return categoryid;
+
+    public Brand getBrand() {
+        return brand;
     }
-    public void setCategoryid(Long categoryid) {
-        this.categoryid = categoryid;
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
+
+
+
     
 }
