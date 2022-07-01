@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="309bc85d-1082-4c7b-b0a3-1400b676ad51" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_Version Control and Branch Managent (Git)/2_Version Control and Branch Managent (Git).iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_Basis Programming/pratikum/pratikum.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_Basis Programming/pratikum/task2/task2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_Time Complexity &amp; Space Complexity/5_Time Complexity &amp; Space Complexity.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="309bc85d-1082-4c7b-b0a3-1400b676ad51" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
